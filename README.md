@@ -19,5 +19,4 @@ Naar
 <script src='../profiles/kikv.js' async class='remove'></script>
 ```
 
-Installatie klaar
-En ontwikkelen maar.
+Installatie klaar. En ontwikkelen maar.
