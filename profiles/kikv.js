@@ -38,7 +38,6 @@ const modules = [
   import("../src/core/structure.js"),
   import("../src/core/informative.js"),
   import("../src/core/id-headers.js"),
-  import("../src/ui/save-html.js"),
   import("../src/ui/about-respec.js"),
   import("../src/core/seo.js"),
   import("../src/core/highlight.js"),
