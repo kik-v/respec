@@ -1,6 +1,6 @@
 // @ts-check
 /* jshint strict: true, browser:true, jquery: true */
-// Module kikv/style
+// Module dini/style
 // Inserts a link to the appropriate W3C style for the specification's maturity level.
 // CONFIGURATION
 //  - specStatus: the short code for the specification's maturity level or type (required)
@@ -105,15 +105,15 @@ export function run(conf) {
     showWarning(msg, name);
   }
 
-  let styleFile = "";
+  let finalStyleURL = "";
 
   // Figure out which style file to use.
   switch (conf.specStatus.toUpperCase()) {
     case "UNOFFICIAL":
-      styleFile = "W3C-UD";
+      finalStyleURL = `../assets/kikv.css`;
       break;
     case "BASE":
-      styleFile = "base.css";
+      finalStyleURL = `https://www.w3.org/StyleSheets/TR/2016/base.css`;
       break;
   }
 
@@ -127,7 +127,6 @@ export function run(conf) {
       { once: true }
     );
   }
-  const finalStyleURL = `https://www.w3.org/StyleSheets/TR/2016/${styleFile}`;
   linkCSS(document, finalStyleURL);
   // Make sure the W3C stylesheet is the last stylesheet, as required by W3C Pub Rules.
   const moveStyle = styleMover(finalStyleURL);

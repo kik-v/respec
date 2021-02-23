@@ -56,7 +56,7 @@ const kikvDate = new Intl.DateTimeFormat(["nl-NL"], {
 });
 
 const status2text = {
-  unofficial: "KIK-V Ontwerp van",
+  unofficial: "KIK-V Werkdocument van",
   base: "KIK-V Specificatie van",
 };
 
