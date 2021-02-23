@@ -110,7 +110,7 @@ export function run(conf) {
   // Figure out which style file to use.
   switch (conf.specStatus.toUpperCase()) {
     case "UNOFFICIAL":
-      finalStyleURL = `../assets/kikv.css`;
+      finalStyleURL = `https://kik-v.github.io/datastation/assets/kikv.css`;
       break;
     case "BASE":
       finalStyleURL = `https://www.w3.org/StyleSheets/TR/2016/base.css`;
